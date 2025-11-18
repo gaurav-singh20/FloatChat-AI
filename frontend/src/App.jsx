@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const API_URL = "/api/chat";
+// Use environment variable for API URL, fallback to local development
+const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const API_URL = `${API_BASE_URL}/api/chat`;
 const LS_KEY = "chatgpt_like_chats_v1";
 
 function nowTs() {

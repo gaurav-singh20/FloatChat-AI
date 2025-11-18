@@ -31,6 +31,9 @@ tzdata==2025.2
 # Time/Date handling
 cftime==1.6.5
 
+# Production server
+gunicorn==23.0.0
+
 # Other dependencies
 blinker==1.9.0
 click==8.3.0
